@@ -20,7 +20,7 @@ jobs:
             - go-mod-v4
       - run:
           name: Install Dependencies
-          command: pwd
+          command: which go
       - save_cache:
           key: go-mod-v4
           paths:
