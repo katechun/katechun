@@ -20,7 +20,7 @@ jobs:
             - go-mod-v4
       - run:
           name: Install Dependencies
-          command: exporter GOPATH=~/repo;go mod init; go/bin/go mod tidy
+          command: export GOPATH=~/repo;go mod init; go/bin/go mod tidy
       - save_cache:
           key: go-mod-v4
           paths:
